@@ -1,3 +1,69 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 80%;
+    margin: auto;
+}
+
+top {
+    text-align: center;
+}
+
+images {
+    position: relative;
+    margin: auto;
+}
+
 div img {
     width: 20%;
+}
+
+.displayed-img {
+    width: 100%;
+}
+
+bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+bottom *,
+images * {
+    align-self: center;
+}
+
+bottom input {
+    max-width: 10em;
+}
+
+bottom button {
+    width: 5em;
+}
+
+@media only screen and (min-width: 640px) {
+    body {
+        width: 640px;
+    }
+
+    top p {
+        text-align: left;
+    }
+
+    images {
+        position: static;
+    }
+
+    bottom {
+        flex-direction: row;
+    }
+
+    bottom * {
+        margin: 20px;
+    }
 }
