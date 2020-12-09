@@ -20,12 +20,21 @@ images {
     margin: auto;
 }
 
+#thumb-bar {
+    height: auto;
+    padding: 0;
+}
+
 div img {
     width: 20%;
 }
 
 .displayed-img {
     width: 100%;
+}
+
+bottom.hidden {
+    visibility: hidden;
 }
 
 bottom {
