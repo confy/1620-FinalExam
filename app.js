@@ -13,6 +13,8 @@ function addThumbBar() {
         thumbBar.appendChild(img)
     }
 }
+
+
 let currImg = 4
 thumbBar.addEventListener("mouseover", (img) => {
     imgID = img.target.id
@@ -24,7 +26,6 @@ thumbBar.addEventListener("mouseover", (img) => {
     currImage = imgID
 })
 
-
 submit.addEventListener("click", () => {
     value = input.value
     input.value = ""
@@ -35,9 +36,11 @@ submit.addEventListener("click", () => {
     }
 })
 
+
 function onPageLoad() {
     bottom.setAttribute("class", "hidden")
     addThumbBar()
 }
+
 
 onPageLoad()
